@@ -3,21 +3,6 @@
 // If value of box === value of box next to it let box = sum of values; Else, boxes stay same value
 
 /*----- constants -----*/
-const cellCheck1 = [2, 5]
-const cellCheck2 = [3, 6]
-const cellCheck3 = [4, 7]
-const cellCheck4 = [8]
-const cellCheck5 = [6, 9]
-const cellCheck6 = [7, 10]
-const cellCheck7 = [8, 11]
-const cellCheck8 = [12]
-const cellCheck9 = [10, 13]
-const cellCheck10 = [11, 14]
-const cellCheck11 = [12, 15]
-const cellCheck12 = [16]
-const cellCheck13 = [14]
-const cellCheck14 = [15]
-const cellCheck15 = [16]
 
 
 /*----- app's state (variables) -----*/
@@ -85,7 +70,7 @@ function checkForEmptySpaceDown(){
       checkForEmptySpaceDown();
       checkForMatchDown();
     };
-  }
+  };
 };
 
 function checkForMatchDown(){
@@ -104,6 +89,7 @@ function checkForEmptySpaceLeft(){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
       checkForEmptySpaceLeft();
+      checkForMatchLeft();
     }
   };
   for(i = 4; i < 7; i++){
@@ -111,6 +97,7 @@ function checkForEmptySpaceLeft(){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
       checkForEmptySpaceLeft();
+      checkForMatchLeft();
     };
   };
   for(i = 8; i < 11; i++){
@@ -118,6 +105,7 @@ function checkForEmptySpaceLeft(){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
       checkForEmptySpaceLeft();
+      checkForMatchLeft();
     };
   };
   for(i = 12; i < 15; i++){
@@ -125,6 +113,7 @@ function checkForEmptySpaceLeft(){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
       checkForEmptySpaceLeft();
+      checkForMatchLeft();
     };
   };
 };
@@ -135,7 +124,6 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
-      break;
     }
   };
   for(i = 4; i < 7; i++){
@@ -143,7 +131,6 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
-      break;
     }
   };
   for(i = 8; i < 11; i++){
@@ -151,7 +138,6 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
-      break;
     }
   };
   for(i = 12; i < 15; i++){
@@ -159,7 +145,6 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
-      break;
     }
   };
 };
