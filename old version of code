@@ -1,0 +1,107 @@
+// if (cell1 === "" && cell5 !== ""){
+//   cell1 = cell5;
+//   cell5 = "";
+// };
+// if (cell2 === "" && cell6 !== ""){
+//   cell2 = cell6;
+//   cell6 = "";
+// };
+// if (cell4=== "" && cell8 !== ""){
+//   cell4 = cell8;
+//   cell8 = "";
+// };
+// if (cell5 === "" && cell9 !== ""){
+//   cell5 = cell9;
+//   cell9 = "";
+// }
+// if (cell6 === "" && cell10 !== ""){
+//   cell6 = cell10;
+//   cell10 = "";
+// }
+// if(cell7 === "" && cell11 !== ""){
+//   cell7 = cell11;
+//   cell11 = "";
+// };
+// if (cell8 === "" && cell12 !== ""){
+//     cell8 = cell12;
+//     cell12 = "";
+// };
+// if (cell9 === "" && cell13 !== ""){
+//     cell9 = cell13;
+//     cell13 = "";
+// };
+// if (cell10 === "" && cell14 !== ""){
+//     cell10 = cell14;
+//     cell14 = "";
+// };
+// if (cell11 === "" && cell15 !== ""){
+//     cell11 = cell15;
+//     cell15 = "";
+// };
+// if (cell12 === "" && cell16 !== ""){
+//     cell12 = cell16;
+//     cell16 = "";
+// };
+
+
+MATCH check
+// if(cell1 === cell5 && cell1 !== ""){
+//   let sum = parseInt(cell1) + parseInt(cell5);
+//   cell1 = sum;
+//   cell5 = "";
+// };
+// if (cell2 === cell6 && cell2 !== ""){
+//   let sum = parseInt(cell2) + parseInt (cell6);
+//   cell2 = sum;
+//   cell6 = "";
+// };
+// if (cell3 === cell7 && cell3 !== ""){
+//   let sum = parseInt(cell3) + parseInt(cell7);
+//   cell3 = sum;
+//   cell7 = "";
+// };
+// if (cell4 === cell8 && cell4 !== ""){
+//   let sum = parseInt(cell4) + parseInt(cell8);
+//   cell4 = sum;
+//   cell8 = "";
+// };
+// if (cell5 === cell9 && cell5 !== ""){
+//   let sum = parseInt(cell5) + parseInt(cell9);
+//   cell5 = sum;
+//   cell9 = "";
+// }
+// if (cell6 === cell10 && cell6 !== ""){
+//   let sum = parseInt(cell6) + parseInt(cell10);
+//   cell6 = sum;
+//   cell10 = "";
+// }
+// if (cell7 === cell11 && cell7 !== ""){
+//   let sum = parseInt(cell7) + parseInt(cell11);
+//   cell7 = sum;
+//   cell11 = "";
+// };
+// if (cell8 === cell12 && cell8 !== ""){
+//   let sum = parseInt(cell8) + parseInt(cell12);
+//   cell8 = sum;
+//   cell12 = "";
+// };
+// if (cell9 === cell13 && cell9 !== ""){
+//   let sum = parseInt(cell9) + parseInt(cell13);
+//   cell9 = sum;
+//   cell13 = "";
+// };
+// if (cell10 === cell14 && cell10 !== ""){
+//   let sum = parseInt(cell10) + parseInt(cell14);
+//   cell10 = sum;
+//   cell14 = "";
+// };
+// if (cell11 === cell15 && cell1 !== ""){
+//   let sum = parseInt(cell11) + parseInt(cell15);
+//   cell11 = sum;
+//   cell15 = "";
+// };
+// if (cell12 === cell16 && cell12 !== ""){
+//   let sum = parseInt(cell12) + parseInt(cell16);
+//   cell12 = sum;
+//   cell16 = "";
+// };

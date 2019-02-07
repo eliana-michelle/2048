@@ -1,0 +1,53 @@
+html, * {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+table {
+  width: 400px;
+  height: 400px;
+  border: 5px solid white;
+  border-radius: 4px;
+}
+
+td {
+  border: 5px solid white;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  text-align: center;
+  margin: 20px 100px;
+}
+
+button {
+  border: 5px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0px;
+}
