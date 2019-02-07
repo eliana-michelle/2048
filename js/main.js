@@ -61,6 +61,8 @@ function checkForEmptySpaceUp(){
     if(cells[i].textContent === "" && cells[i+4].textContent !== ""){
       cells[i].textContent = cells[i+4].textContent;
       cells[i+4].textContent = "";
+      checkForEmptySpaceUp();
+      checkForMatchUp();
     };
   };
 };
@@ -80,6 +82,8 @@ function checkForEmptySpaceDown(){
     if(cells[i].textContent === "" && cells[i-4].textContent !== ""){
       cells[i].textContent = cells[i-4].textContent;
       cells[i-4].textContent = "";
+      checkForEmptySpaceDown();
+      checkForMatchDown();
     };
   }
 };
@@ -99,24 +103,28 @@ function checkForEmptySpaceLeft(){
     if(cells[i].textContent === "" && cells[i+1].textContent !== ""){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
+      checkForEmptySpaceLeft();
     }
   };
   for(i = 4; i < 7; i++){
     if(cells[i].textContent === "" && cells[i+1].textContent !== ""){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
+      checkForEmptySpaceLeft();
     };
   };
   for(i = 8; i < 11; i++){
     if(cells[i].textContent === "" && cells[i+1].textContent !== ""){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
+      checkForEmptySpaceLeft();
     };
   };
   for(i = 12; i < 15; i++){
     if(cells[i].textContent === "" && cells[i+1].textContent !== ""){
       cells[i].textContent = cells[i+1].textContent;
       cells[i+1].textContent = "";
+      checkForEmptySpaceLeft();
     };
   };
 };
@@ -127,6 +135,7 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
+      break;
     }
   };
   for(i = 4; i < 7; i++){
@@ -134,6 +143,7 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
+      break;
     }
   };
   for(i = 8; i < 11; i++){
@@ -141,6 +151,7 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
+      break;
     }
   };
   for(i = 12; i < 15; i++){
@@ -148,6 +159,7 @@ function checkForMatchLeft(){
       let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
       cells[i].textContent = sum;
       cells[i+1].textContent = "";
+      break;
     }
   };
 };
@@ -157,55 +169,63 @@ function checkForEmptySpaceRight(){
     if(cells[i].textContent !== "" && cells[i+1].textContent === ""){
       cells[i+1].textContent = cells[i].textContent;
       cells[i].textContent = "";
+      checkForEmptySpaceRight();
+      checkForMatchRight();
     }
   };
   for(i = 4; i < 7; i++){
     if(cells[i].textContent !== "" && cells[i+1].textContent === ""){
       cells[i+1].textContent = cells[i].textContent;
       cells[i].textContent = "";
+      checkForEmptySpaceRight();
+      checkForMatchRight();
     };
   };
   for(i = 8; i < 11; i++){
     if(cells[i].textContent !== "" && cells[i+1].textContent === ""){
       cells[i+1].textContent = cells[i].textContent;
       cells[i].textContent = "";
+      checkForEmptySpaceRight();
+      checkForMatchRight();
     };
   };
   for(i = 12; i < 15; i++){
     if(cells[i].textContent !== "" && cells[i+1].textContent === ""){
       cells[i+1].textContent = cells[i].textContent;
       cells[i].textContent = "";
+      checkForEmptySpaceRight();
+      checkForMatchRight();
     };
   };
 };
 
 function checkForMatchRight(){
-  for(i = 0; i < 3; i++){
-    if(cells[i].textContent === cells[i+1].textContent && cells[i+1].textContent !== ""){
-      let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
-      cells[i+1].textContent = sum;
-      cells[i].textContent = "";
+  for(i = 3; i > 0; i--){
+    if(cells[i].textContent === cells[i-1].textContent && cells[i].textContent !== ""){
+      let sum = parseInt(cells[i].textContent) + parseInt(cells[i-1].textContent);
+      cells[i].textContent = sum;
+      cells[i-1].textContent = "";
     }
   };
-  for(i = 4; i < 7; i++){
-    if(cells[i].textContent === cells[i+1].textContent && cells[i+1].textContent !== ""){
-      let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
-      cells[i+1].textContent = sum;
-      cells[i].textContent = "";
+  for(i = 7; i > 4; i--){
+    if(cells[i].textContent === cells[i-1].textContent && cells[i].textContent !== ""){
+      let sum = parseInt(cells[i].textContent) + parseInt(cells[i-1].textContent);
+      cells[i].textContent = sum;
+      cells[i-1].textContent = "";
     }
   };
-  for(i = 8; i < 11; i++){
-    if(cells[i].textContent === cells[i+1].textContent && cells[i+1].textContent !== ""){
-      let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
-      cells[i+1].textContent = sum;
-      cells[i].textContent = "";
+  for(i = 11; i > 8; i--){
+    if(cells[i].textContent === cells[i-1].textContent && cells[i].textContent !== ""){
+      let sum = parseInt(cells[i].textContent) + parseInt(cells[i-1].textContent);
+      cells[i].textContent = sum;
+      cells[i-1].textContent = "";
     }
   };
-  for(i = 12; i < 15; i++){
-    if(cells[i].textContent === cells[i+1].textContent && cells[i+1].textContent !== ""){
-      let sum = parseInt(cells[i].textContent) + parseInt(cells[i+1].textContent);
-      cells[i+1].textContent = sum;
-      cells[i].textContent = "";
+  for(i = 15; i > 12; i--){
+    if(cells[i].textContent === cells[i-1].textContent && cells[i].textContent !== ""){
+      let sum = parseInt(cells[i].textContent) + parseInt(cells[i-1].textContent);
+      cells[i].textContent = sum;
+      cells[i-1].textContent = "";
     }
   };
 };
